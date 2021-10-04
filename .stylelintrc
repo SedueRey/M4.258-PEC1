@@ -1,0 +1,33 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "color-hex-case": ["lower", { "severity": "warning" }],
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-empty-line-before": [
+      "always",
+      {
+          "except": [
+              "first-nested"
+          ],
+          "ignore": [
+              "after-declaration",
+              "after-comment"
+          ]
+      }
+    ],
+    "declaration-no-important": true,
+    "number-leading-zero": "never",
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+      "componentSelectors": {
+        "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
+      }
+    }
+  }
+}

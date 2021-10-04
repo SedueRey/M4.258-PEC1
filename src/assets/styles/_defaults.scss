@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+:root {
+  --bgcolor: #{$background-color};
+  --textcolor: #{$text-color};
+  --primary: #{$main-color};
+  --secondary: #{$secondary-color};
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bgcolor: #{invert($background-color)};
+    --textcolor: #{invert($text-color)};
+    --primary: #{invert($main-color)};
+    --secondary: #{invert($secondary-color)};
+  }
+}
+
+body,
+.body {
+  background-color: v(bgcolor);
+  border-top: 0.5rem solid v(primary);
+  color: v(textcolor);
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: #{$default-font-weight};
+  padding: 1rem;
+  @media (min-width: $xs-max-width) {
+    padding: 0;
+  }
+  &.body--light {
+    --bgcolor: #{complementary($background-color)};
+    --textcolor: #{complementary($text-color)};
+    --primary: #{invert($main-color)};
+    --secondary: #{invert($secondary-color)};
+  }
+}
+
+.link {
+  color: v(primary);
+}

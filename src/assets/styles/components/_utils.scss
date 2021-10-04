@@ -1,0 +1,8 @@
+.util-container-flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $xs-max-width) {
+    flex-direction: row;
+  }
+}

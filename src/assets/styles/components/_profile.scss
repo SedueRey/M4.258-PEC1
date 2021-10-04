@@ -1,0 +1,79 @@
+.profile {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  @media (min-width: $xs-max-width) {
+    text-align: left;
+  }
+  &__photo {
+    background: v(primary);
+    border-radius: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    position: relative;
+  }
+  &__photoimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: v(primary) url('../images/me.jpg') no-repeat top left;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    filter: grayscale(1);
+    border-radius: 100%;
+  }
+  &__title {
+    color: v(secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+  }
+  &__birthdate {
+    margin-bottom: 0.5rem;
+  }
+  &__mail {
+    @extend .link;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+  &__subtitle {
+    color: v(secondary);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+  }
+  &__networkList {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $xs-max-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__network {
+    width: 100%;
+    align-items: center;
+    border: 2px solid v(primary);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.025rem;
+    color: v(primary);
+    display: block;
+    text-decoration: none;
+    margin: 0 0 0.5rem 0;
+    @media (min-width: $xs-max-width) {
+      margin: 0 0.5rem;
+      &:first-child {
+        margin: 0 0.5rem 0 0;
+      }
+    }
+    &:hover {
+      background: v(primary);
+      color: v(bgcolor);
+    }
+  }
+}
