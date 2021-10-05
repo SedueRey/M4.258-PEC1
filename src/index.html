@@ -6,18 +6,25 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
   <title>Currículum vitae Eduardo Rey Jara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="body body--light">
   <header class="header" id="document-header">
     <h1 class="header__heading">Curriculum Vitae Eduardo Rey Jara</h1>
     <p class="header__job">Desarrollador Full Stack (JS, Node, PHP)</p>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Sobre mi</a>
-          <a href="#">Carta de presentación</a>
-          <a href="#">Cronología</a>
+    <nav class="header__navigation mainnav">
+      <ul class="mainnav__item-list">
+        <li class="mainnav__item">
+          <a class="mainnav__link" href="#">Sobre mi</a>
+        </li>
+        <li class="mainnav__item">
+          <a class="mainnav__link" href="#">Carta de presentación</a>
+        </li>
+        <li class="mainnav__item">
+          <a class="mainnav__link" href="#">Cronología</a>
         </li>
       </ul>
     </nav>
@@ -46,15 +53,16 @@
       </div>
     </aside>
     <section>
-      <article>
-        <h1>Presentación</h1>
-        <p>Soy Eduardo Rey, aunque todo el mundo me conoce como Sedue. Llevo <strong>más de 20 años</strong> dedicándome
-          al <strong>desarrollo web</strong> realizando proyectos pequeños y grandes contratado o como freelance.</p>
+      <article class="story">
+        <h1 class="story__title">Presentación</h1>
+        <p class="story__paragraph">Soy Eduardo Rey, aunque todo el mundo me conoce como Sedue. Llevo <strong class="story__important">más de 20 años</strong> dedicándome
+          al <strong class="story__important">desarrollo web</strong> realizando proyectos pequeños y grandes contratado o como freelance.</p>
       </article>
-      <article>
-        <h1>Mi vida laboral</h1>
-        <h2>Actualmente</h2>
-        <p>Desde 2018 trabajo para la empresa <a href="https://ticarum.es" rel="nofollow noopener noreferrer"
+      <article class="story">
+        <h1 class="story__title">Mi vida laboral</h1>
+        <h2 class="story__subtitle">Actualmente</h2>
+        <p class="story__paragraph">Desde 2018 trabajo para la empresa <a class="story__link" href="https://ticarum.es"
+            rel="nofollow noopener noreferrer"
             target="_blank">Ticarum</a>, dentro del grupo encargado del
           mantenimiento del Aula Virtual de la Universidad de Murcia, pasando a coordinarlo un poco más adelante. En un
           principio me encargaba de la actualización de la parte frontend de la plataforma, basada en
@@ -67,55 +75,164 @@
           una
           infraestructura de microservicios.
         </p>
-        <p>También formo parte del Core Team del proyecto LMS <a href="https://www.sakailms.org/"
+        <p class="story__paragraph">También formo parte del Core Team del proyecto LMS <a class="story__link"
+            href="https://www.sakailms.org/"
             rel="nofollow noopener noreferrer" target="_blank">Sakai</a>, un proyecto de software libre con
           más de 10 años de recorrido.
         </p>
-        <h2>Proyectos europeos</h2>
-        <p>He trabajado en varios proyectos europeos durante mi trayectoria. Durante mi breve estancia en
-          la empresa Answare Tech de Murcia colaboré en los proyectos europeos <a href="http://www.i-react.eu/"
-            rel="nofollow noopener noreferrer" target="_blank">iReact</a>, <a href="http://www.floodserv-project.eu/"
-            rel="nofollow noopener noreferrer" target="_blank">FloodServ</a> e <a
+        <h2 class="story__subtitle">Proyectos europeos</h2>
+        <p class="story__paragraph">He trabajado en varios proyectos europeos durante mi trayectoria. Durante mi breve
+          estancia en
+          la empresa Answare Tech de Murcia colaboré en los proyectos europeos <a class="story__link" href="http://www.i-react.eu/"
+            rel="nofollow noopener noreferrer" target="_blank">iReact</a>, <a class="story__link" href="http://www.floodserv-project.eu/"
+            rel="nofollow noopener noreferrer" target="_blank">FloodServ</a> e <a class="story__link"
             href="http://www.transformingtransport.eu/" rel="nofollow noopener noreferrer" target="_blank">Itea 3</a>.
         </p>
-        <p>Posteriormente, también he colaborado con el proyecto <a href="https://motiva-project.eu"
+        <p class="story__paragraph">Posteriormente, también he colaborado con el proyecto <a class="story__link"
+            href="https://motiva-project.eu"
             rel="nofollow noopener noreferrer" target="_blank">Motiva</a> y, desde 2021, con "Advancing and
-          Reassessing Oral Skills for English" o <a href="https://www.um.es/aroseproject/"
+          Reassessing Oral Skills for English" o <a class="story__link" href="https://www.um.es/aroseproject/"
             rel="nofollow noopener noreferrer" target="_blank">Arose Project</a>
         </p>
-        <h2>Desarrollador freelance</h2>
-        <p>Durante casi 7 años, de 2012 a 2018, me dediqué a trabajar como trabajador freelance. Durante
+        <h2 class="story__subtitle">Desarrollador freelance</h2>
+        <p class="story__paragraph">Durante casi 7 años, de 2012 a 2018, me dediqué a trabajar como trabajador
+          freelance. Durante
           este tiempo colaboré con diversas empresas y clientes para llevar a cabo proyectos bastante diferentes.
         </p>
-        <p>Entre los que estoy más orgulloso puedo destacar el rediseño de los periódicos regionales de
-          Vocento (<a href="https://www.laverdad.es" rel="nofollow noopener noreferrer" target="_blank">La
-            Verdad</a> o <a href="https://www.elcorreo.com" rel="nofollow noopener noreferrer" target="_blank">El
-            correo</a> entre otros). Para este cliente también participé en los proyectos de <strong>Summer
-            Beauty</strong>, <strong>Supersanos</strong>, el rediseño del <a href="https://www.abc.es"
+        <p class="story__paragraph">Entre los que estoy más orgulloso puedo destacar el rediseño de los periódicos
+          regionales de
+          Vocento (<a class="story__link" href="https://www.laverdad.es" rel="nofollow noopener noreferrer" target="_blank">La
+            Verdad</a> o <a class="story__link" href="https://www.elcorreo.com" rel="nofollow noopener noreferrer" target="_blank">El
+            correo</a> entre otros). Para este cliente también participé en los proyectos de <strong class="story__important">Summer
+            Beauty</strong>, <strong class="story__important">Supersanos</strong>, el rediseño del <a class="story__link" href="https://www.abc.es"
             rel="nofollow noopener noreferrer" target="_blank">ABC móvil</a>,
-          nominada a los <a href="https://www.mwcbarcelona.com/mobile-awards" rel="nofollow noopener noreferrer"
-            target="_blank"><em>Global Mobile Awards</em></a> o sus plataforma <strong>Guapabox</strong>, actualmente
-          offline, y <a href="https://www.pidecita.com/" rel="nofollow noopener noreferrer"
+          nominada a los <a class="story__link" href="https://www.mwcbarcelona.com/mobile-awards" rel="nofollow noopener noreferrer"
+            target="_blank"><em>Global Mobile Awards</em></a> o sus plataforma <strong class="story__important">Guapabox</strong>, actualmente
+          offline, y <a class="story__link" href="https://www.pidecita.com/" rel="nofollow noopener noreferrer"
             target="_blank">Pidecita</a>.
         </p>
-        <p>Otros de mis clientes a destacar podrían ser la Universidad Politécnica de Valencia, la
+        <p class="story__paragraph">Otros de mis clientes a destacar podrían ser la Universidad Politécnica de Valencia,
+          la
           Universitat de Lleida, el museo virtual de historia de la educación, Hefame o PCComponentes.
         </p>
-        <p>Siéntete libre para preguntarme cualquier detalle sobre estos u otros proyectos de los que he
+        <p class="story__paragraph">Siéntete libre para preguntarme cualquier detalle sobre estos u otros proyectos de
+          los que he
           formado parte.
         </p>
-        <h2>Colaboraciones</h2>
-        <p>En mis pocos ratos libres, además de dibujar e ilustrar cómics, me gusta colaborar con pequeños
+        <h2 class="story__subtitle">Colaboraciones</h2>
+        <p class="story__paragraph">En mis pocos ratos libres, además de dibujar e ilustrar cómics, me gusta colaborar
+          con pequeños
           proyectos para ayudarles a ganar algo de visibilidad online. Las colaboraciones más recientes han sido con la
-          <a href="https://veronicagil.com/" rel="nofollow noopener noreferrer" target="_blank">traductora y
-            revisora Verónica Gil</a> y la web del videojuego <em>indie</em> <a href="https://pepothecat.com/"
+          <a class="story__link" href="https://veronicagil.com/" rel="nofollow noopener noreferrer" target="_blank">traductora y
+            revisora Verónica Gil</a> y la web del videojuego <em>indie</em> <a class="story__link" href="https://pepothecat.com/"
             rel="nofollow noopener noreferrer" target="_blank">Pepo the
             cat</a>.
         </p>
         </div>
       </article>
-      <article>
-        <h1>Orden cronológico</h1>
+      <article class="story">
+        <h1 class="story__title">Orden cronológico</h1>
+        <ul class="joblist">
+          <li class="joblist__item">
+            <time datetime="2018-01-01" class="joblist__startdate">01/2018</time>
+            <span datetime="" class="joblist__enddate">Actualidad</span>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Coordinador de equipo y frontend lead
+            </span>
+            <span class="joblist__company">Ticarum</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="" class="joblist__startdate">04/2013</time>
+            <time datetime="" class="joblist__enddate">05/2018</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Profesional independiente
+            </span>
+            <span class="joblist__company">Freelance</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2017-01-01" class="joblist__startdate">01/2017</time>
+            <time datetime="2017-04-01" class="joblist__enddate">04/2017</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Senior Frontend Developer
+            </span>
+            <span class="joblist__company">Answare-Tech</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2007-11-01" class="joblist__startdate">11/2007</time>
+            <time datetime="2016-12-01" class="joblist__enddate">12/2016</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Jefe de proyecto Grupo de Apoyo a la Teleenseñanza, Ática, Universidad de Murcia
+            </span>
+            <span class="joblist__company">Digio soluciones digitales</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2013-12-01" class="joblist__startdate">12/2013</time>
+            <time datetime="2014-09-01" class="joblist__enddate">09/2014</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Senior UX Designer and Frontend Developer
+            </span>
+            <span class="joblist__company">Loowid</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2005-09-01" class="joblist__startdate">09/2005</time>
+            <time datetime="2007-09-01" class="joblist__enddate">09/2007</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Desarrollador web
+            </span>
+            <span class="joblist__company">KRC Sistemas</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2006-04-01" class="joblist__startdate">04/2006</time>
+            <time datetime="2006-09-01" class="joblist__enddate">09/2006</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Desarrollador web
+            </span>
+            <span class="joblist__company">Freelance</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2004-03-01" class="joblist__startdate">03/2004</time>
+            <time datetime="2006-03-01" class="joblist__enddate">03/2006</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Auxiliar de Laboratorio
+            </span>
+            <span class="joblist__company">Universidad de Valladolid</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2003-09-01" class="joblist__startdate">09/2003</time>
+            <time datetime="2005-10-01" class="joblist__enddate">10/2005</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Becario Espacio XTRA
+            </span>
+            <span class="joblist__company">Fundación Cajamurcia</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2004-03-01" class="joblist__startdate">03/2004</time>
+            <time datetime="2005-09-01" class="joblist__enddate">09/2005</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Junior Servicio Oreja
+            </span>
+            <span class="joblist__company">Universidad de Murcia</span>
+          </li>
+          <li class="joblist__item">
+            <time datetime="2001-03-01" class="joblist__startdate">03/2001</time>
+            <time datetime="2003-09-01" class="joblist__enddate">09/2003</time>
+            <span class="joblist__position">
+              <i class="joblist__icon fas fa-briefcase"></i>
+              Modelador 3D
+            </span>
+            <span class="joblist__company">Dreamswizards</span>
+          </li>
+        </ul>
       </article>
     </section>
   </main>

@@ -1,0 +1,41 @@
+.joblist {
+  margin: 1.5rem 0;
+  &__item {
+    margin: 0 0 1.5rem 0;
+  }
+  &__startdate {
+    font-size: 0.875rem;
+    font-style: oblique;
+    opacity: 0.5;
+    &::after {
+      content: "-";
+      display: inline-block;
+      margin: 0 0 0 0.5rem;
+    }
+  }
+  &__enddate {
+    font-size: 0.875rem;
+    font-style: oblique;
+    opacity: 0.5;
+    &::after {
+      content: "";
+      display: block;
+    }
+  }
+  &__icon {
+    color: v(secondary);
+    opacity: 0.5;
+    margin: 0.05rem 0 0 -1.5rem;
+    position: absolute;
+  }
+  &__position {
+    display: block;
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin: 0.5rem 0 0 1.5rem;
+  }
+  &__company {
+    display: block;
+    padding: 0.5rem 0 0 1.5rem;
+  }
+}

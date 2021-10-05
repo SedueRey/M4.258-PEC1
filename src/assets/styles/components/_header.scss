@@ -1,20 +1,14 @@
 .header {
-  display: block;
-  &__item {
-    display: inline-block;
-    &--modifier {
-      color: red;
-    }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: v(primary);
+    margin: 1rem 0 0.5rem 0;
   }
-  &__item_2 {
-    display: inline-block;
-    &--modifier {
-      color: red;
-    }
+  &__job {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: v(secondary);
+    margin: 0 0 1.5rem 0;
   }
-}
-
-.util-container {
-  display: block;
-  margin: 0 auto;
 }

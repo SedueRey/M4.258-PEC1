@@ -6,7 +6,13 @@ $main-color: #fb5151;
 $secondary-color: #f47471;
 $text-color: #e1e2e2;
 
-$font-family: 'Nunito', sans-serif;
+// Light colors
+$light-background-color: invert($background-color);
+$light-main-color: invert($main-color);
+$light-secondary-color: invert($secondary-color);
+$light-text-color: complementary($text-color);
+
+$font-family: 'Nunito', serif;
 $default-font-weight: 300;
 
 // Structure

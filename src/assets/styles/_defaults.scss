@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
-
 :root {
   --bgcolor: #{$background-color};
   --textcolor: #{$text-color};
@@ -10,10 +8,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bgcolor: #{invert($background-color)};
-    --textcolor: #{invert($text-color)};
-    --primary: #{invert($main-color)};
-    --secondary: #{invert($secondary-color)};
+    --bgcolor: #{$light-background-color};
+    --textcolor: #{$light-text-color};
+    --primary: #{$light-main-color};
+    --secondary: #{$light-secondary-color};
   }
 }
 
@@ -30,13 +28,18 @@ body,
     padding: 0;
   }
   &.body--light {
-    --bgcolor: #{complementary($background-color)};
-    --textcolor: #{complementary($text-color)};
-    --primary: #{invert($main-color)};
-    --secondary: #{invert($secondary-color)};
+    --bgcolor: #{$light-background-color};
+    --textcolor: #{$light-text-color};
+    --primary: #{$light-main-color};
+    --secondary: #{$light-secondary-color};
   }
 }
 
 .link {
   color: v(primary);
+  &:hover {
+    border-bottom: 1px solid v(secondary);
+    color: v(secondary);
+    text-decoration: none;
+  }
 }
