@@ -8,6 +8,8 @@
  */
 
 @import "variables";
+@import "functions";
+@import "defaults";
 
 /**
  * Import npm dependencies
@@ -18,12 +20,23 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+/* stylelint-disable */
+@import "css-reset-and-normalize/css/reset-and-normalize.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
+/* stylelint-enable */
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "components/header";
+@import "components/darkmodeswitcher";
+@import "components/mainnav";
+@import "components/profile";
+@import "components/joblist";
+@import "components/story";
+@import "components/utils";
 
 /**
  * Do NOT include anything else in this file!

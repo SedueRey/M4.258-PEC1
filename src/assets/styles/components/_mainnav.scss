@@ -1,0 +1,40 @@
+.mainnav {
+  margin: 1.5rem 0;
+
+  &--is-fixed {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__item-list {
+    background-color: v(secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 -1rem;
+
+    @media (min-width: $xs-max-width) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: v(bgcolor);
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      color: v(textcolor);
+      background-color: v(primary);
+    }
+  }
+}

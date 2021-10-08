@@ -1,0 +1,54 @@
+.darkmodeswitcher {
+  display: none;
+  visibility: hidden;
+
+  &--is-visible {
+    display: block;
+    visibility: visible;
+  }
+
+  &__label {
+    border-radius: 6px;
+    background-color: v(primary);
+    color: v(bgcolor);
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.5rem;
+    user-select: none;
+
+    @media (min-width: $xs-max-width) {
+      background-color: v(bgcolor);
+      color: v(primary);
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    appearance: none;
+    border: 1px solid v(secondary);
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    background: v(bgcolor);
+    vertical-align: bottom;
+    &:checked {
+      display: none;
+      ~.darkmodeswitcher__moon,
+      ~.darkmodeswitcher__selected {
+        display: inline-block;
+      }
+      ~.darkmodeswitcher__sun {
+        display: none;
+      }
+    }
+    +.darkmodeswitcher__sun {
+      display: inline-block;
+    }
+  }
+
+  &__selected,
+  &__moon {
+    display: none;
+  }
+}

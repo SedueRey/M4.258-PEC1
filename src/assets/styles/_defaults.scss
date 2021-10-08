@@ -1,0 +1,55 @@
+:root {
+  --bgcolor: #{$background-color};
+  --textcolor: #{$text-color};
+  --primary: #{$main-color};
+  --secondary: #{$secondary-color};
+  --grid-width: 60rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bgcolor: #{$light-background-color};
+    --textcolor: #{$light-text-color};
+    --primary: #{$light-main-color};
+    --secondary: #{$light-secondary-color};
+  }
+}
+
+body,
+.body {
+  background-color: v(bgcolor);
+  border-top: 0.5rem solid v(primary);
+  color: v(textcolor);
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: #{$default-font-weight};
+  padding: 1rem;
+
+  @media (min-width: $xs-max-width) {
+    padding: 0;
+  }
+
+  &.body--light {
+    --bgcolor: #{$light-background-color};
+    --textcolor: #{$light-text-color};
+    --primary: #{$light-main-color};
+    --secondary: #{$light-secondary-color};
+  }
+
+  &.body--dark {
+    --bgcolor: #{$background-color};
+    --textcolor: #{$text-color};
+    --primary: #{$main-color};
+    --secondary: #{$secondary-color};
+  }
+}
+
+.link {
+  color: v(primary);
+
+  &:hover {
+    border-bottom: 1px solid v(secondary);
+    color: v(secondary);
+    text-decoration: none;
+  }
+}
