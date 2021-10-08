@@ -5,6 +5,7 @@
 
   @media (min-width: $xs-max-width) {
     text-align: left;
+    padding: 0 2rem 0 0;
   }
 
   &__photo {
@@ -15,6 +16,11 @@
     width: 100%;
     margin: 0 0 1rem 0;
     position: relative;
+
+    @media (min-width: $xs-max-width) {
+      max-width: 18rem;
+      margin: 0 auto 2rem auto;
+    }
   }
 
   &__photoimg {
@@ -77,6 +83,7 @@
 
     @media (min-width: $xs-max-width) {
       margin: 0 0.5rem;
+      padding: 0.5rem;
       &:first-child {
         margin: 0 0.5rem 0 0;
       }

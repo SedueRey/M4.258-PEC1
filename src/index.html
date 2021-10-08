@@ -12,19 +12,19 @@
 </head>
 
 <body class="body body--light">
-  <header class="header" id="document-header">
+  <header class="header">
     <h1 class="header__heading">Curriculum Vitae Eduardo Rey Jara</h1>
     <p class="header__job">Desarrollador Full Stack (JS, Node, PHP)</p>
-    <nav class="header__navigation mainnav">
+    <nav id="document-mainnav" class="header__navigation mainnav">
       <ul class="mainnav__item-list">
         <li class="mainnav__item">
-          <a class="mainnav__link" href="#">Sobre mi</a>
+          <a class="mainnav__link" href="#presentation">Presentación</a>
         </li>
         <li class="mainnav__item">
-          <a class="mainnav__link" href="#">Carta de presentación</a>
+          <a class="mainnav__link" href="#vidalaboral">Vida laboral</a>
         </li>
         <li class="mainnav__item">
-          <a class="mainnav__link" href="#">Cronología</a>
+          <a class="mainnav__link" href="#crono">Cronología</a>
         </li>
       </ul>
     </nav>
@@ -54,12 +54,18 @@
     </aside>
     <section>
       <article class="story">
-        <h1 class="story__title">Presentación</h1>
+        <h1 class="story__title">
+          <a name="presentation"></a>
+          Presentación
+        </h1>
         <p class="story__paragraph">Soy Eduardo Rey, aunque todo el mundo me conoce como Sedue. Llevo <strong class="story__important">más de 20 años</strong> dedicándome
           al <strong class="story__important">desarrollo web</strong> realizando proyectos pequeños y grandes contratado o como freelance.</p>
       </article>
       <article class="story">
-        <h1 class="story__title">Mi vida laboral</h1>
+        <h1 class="story__title">
+          <a name="vidalaboral"></a>
+          Mi vida laboral
+        </h1>
         <h2 class="story__subtitle">Actualmente</h2>
         <p class="story__paragraph">Desde 2018 trabajo para la empresa <a class="story__link" href="https://ticarum.es"
             rel="nofollow noopener noreferrer"
@@ -131,7 +137,10 @@
         </div>
       </article>
       <article class="story">
-        <h1 class="story__title">Orden cronológico</h1>
+        <h1 class="story__title">
+          <a name="crono"></a>
+          Orden cronológico
+        </h1>
         <ul class="story__joblist joblist">
           <li class="joblist__item">
             <time datetime="2018-01-01" class="joblist__startdate">01/2018</time>
