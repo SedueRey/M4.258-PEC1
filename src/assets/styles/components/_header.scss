@@ -18,4 +18,11 @@
     color: v(secondary);
     margin: 0 0 1.5rem 0;
   }
+
+  &__darkmodeswitcher {
+    text-align: right;
+    @media (min-width: $xs-max-width) {
+      float: right;
+    }
+  }
 }

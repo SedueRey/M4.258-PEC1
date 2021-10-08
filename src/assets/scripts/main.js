@@ -32,4 +32,19 @@
       header.classList.remove('mainnav--is-fixed');
     }
   }
+
+  (() => {
+    console.log('darkmodeswitcher');
+    const userWantsDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.classList.add(
+      userWantsDarkMode ? 'body--dark' : 'body--light'
+    );
+    const darkModeCheckbox = document.getElementById('darkmodeswitcher__input');
+    darkModeCheckbox.checked = userWantsDarkMode;
+    darkModeCheckbox.addEventListener('change', (e) => {
+      document.body.classList.toggle('body--dark');
+      document.body.classList.toggle('body--light');
+    })
+    document.getElementById('darkmodeswitcher').classList.add('darkmodeswitcher--is-visible');
+  })();
 } )();

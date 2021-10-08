@@ -35,6 +35,13 @@ body,
     --primary: #{$light-main-color};
     --secondary: #{$light-secondary-color};
   }
+
+  &.body--dark {
+    --bgcolor: #{$background-color};
+    --textcolor: #{$text-color};
+    --primary: #{$main-color};
+    --secondary: #{$secondary-color};
+  }
 }
 
 .link {

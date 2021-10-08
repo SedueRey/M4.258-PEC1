@@ -11,8 +11,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body body--light">
+<body class="body">
   <header class="header">
+    <div class="header__darkmodeswitcher darkmodeswitcher" id="darkmodeswitcher">
+      <label for="darkmodeswitcher__input" class="darkmodeswitcher__label">
+        <span class="darkmodeswitcher__inputlabeltext">Modo oscuro: </span>
+        <input class="darkmodeswitcher__input" name="darkmodeswitcher__input" type="checkbox"
+          id="darkmodeswitcher__input" />
+        <i class="far fa-check-square darkmodeswitcher__selected"></i>
+        <i class="fas fa-sun darkmodeswitcher__sun"></i>
+        <i class="fas fa-moon darkmodeswitcher__moon"></i>
+      </label>
+    </div>
     <h1 class="header__heading">Curriculum Vitae Eduardo Rey Jara</h1>
     <p class="header__job">Desarrollador Full Stack (JS, Node, PHP)</p>
     <nav id="document-mainnav" class="header__navigation mainnav">
@@ -41,13 +51,13 @@
       </a>
       <h2 class="profile__subtitle">Redes sociales</h2>
       <div class="profile__networkList">
-        <a class="profile__network" href="https://www.instagram.com/seduerey">
+        <a target="_blank" class="profile__network" href="https://www.instagram.com/seduerey">
           Instagram
         </a>
-        <a class="profile__network" href="https://twitter.com/SedueRey">
+        <a target="_blank" class="profile__network" href="https://twitter.com/SedueRey">
           Twitter
         </a>
-        <a class="profile__network" href="https://www.linkedin.com/in/seduerey">
+        <a target="_blank" class="profile__network" href="https://www.linkedin.com/in/seduerey">
           Linkedin
         </a>
       </div>
