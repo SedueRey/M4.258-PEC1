@@ -3,8 +3,8 @@
   --textcolor: #{$text-color};
   --primary: #{$main-color};
   --secondary: #{$secondary-color};
+  --grid-width: 60rem;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -24,9 +24,11 @@ body,
   font-size: 16px;
   font-weight: #{$default-font-weight};
   padding: 1rem;
+
   @media (min-width: $xs-max-width) {
     padding: 0;
   }
+
   &.body--light {
     --bgcolor: #{$light-background-color};
     --textcolor: #{$light-text-color};
@@ -37,6 +39,7 @@ body,
 
 .link {
   color: v(primary);
+
   &:hover {
     border-bottom: 1px solid v(secondary);
     color: v(secondary);
