@@ -1,20 +1,22 @@
 .story {
   margin: 0 0 3rem 0;
 
-  &__title {
-    @extend .header__heading;
-    margin-bottom: 0.5rem;
-
-    &+.story__subtitle {
-      margin: 0 0 1rem 0;
-    }
-  }
-
   &__subtitle {
     font-size: 1.35rem;
     font-weight: 400;
     color: v(secondary);
     margin: 2rem 0 1rem 0;
+  }
+
+  &__title {
+
+    @extend .header__heading;
+
+    margin-bottom: .5rem;
+
+    &+.story__subtitle {
+      margin: 0 0 1rem 0;
+    }
   }
 
   &__paragraph {
