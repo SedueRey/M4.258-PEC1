@@ -43,13 +43,3 @@ body,
     --secondary: #{$secondary-color};
   }
 }
-
-.link {
-  color: v(primary);
-
-  &:hover {
-    border-bottom: 1px solid v(secondary);
-    color: v(secondary);
-    text-decoration: none;
-  }
-}

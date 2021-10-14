@@ -49,7 +49,7 @@
 
   &__mail {
 
-    @extend .link;
+    @extend .util-link;
 
     display: inline-block;
     margin-bottom: .25rem;
